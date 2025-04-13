@@ -1,0 +1,11 @@
+<form (submit)="submit(); $event.preventDefault()" class="space-y-4">
+  <input type="text" placeholder="Nome" [(ngModel)]="name" name="name" required />
+  <input type="text" placeholder="Descrição" [(ngModel)]="description" name="description" required />
+  <select [(ngModel)]="status" name="status">
+    <option value=0>A Fazer</option>
+    <option value=1>Em Progresso</option>
+    <option value=2>Concluída</option>
+    <option value=3>Cancelada</option>
+  </select>
+  <button type="submit">Criar Tarefa</button>
+</form>

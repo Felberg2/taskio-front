@@ -1,0 +1,22 @@
+.task-page {
+    margin: 50px;
+    .task-card {
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        color: white;
+      }
+      
+      .status-todo {
+        background-color: #f39c12;
+      }
+      
+      .status-inProgress {
+        background-color: #3498db;
+      }
+      
+      .status-done {
+        background-color: #2ecc71;
+      }
+      
+}

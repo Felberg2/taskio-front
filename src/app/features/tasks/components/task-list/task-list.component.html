@@ -1,0 +1,10 @@
+<div class="grid gap-4">
+    <div
+      *ngFor="let task of tasks"
+      class="p-4 rounded shadow"
+      [ngStyle]="{ 'background-color': getStatusColor(task.status) }"
+    >
+      <h3 class="text-lg font-bold">{{ task.name }}</h3>
+      <p>{{ task.description }}</p>
+    </div>
+  </div>
